@@ -1,18 +1,18 @@
 execute as @e[tag=dragonfacing] at @s if block ~ ~-1.2 ~ air run tp @s ~ ~-0.1 ~
 execute as @e[tag=dragonfacing] at @s unless block ~ ~-1.2 ~ air run tp @s ~ ~0.1 ~
 
-execute as @p[nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}}] at @s positioned ^ ^ ^0.2 run execute positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[tag=dragonfacing,sort=nearest,distance=..3,limit=1] ~ ~ ~ ~ ~
-execute as @p[nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}},nbt={SelectedItem:{tag:{DragonBook:1}}}] at @s positioned ^ ^ ^1.0 run execute positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[tag=dragonfacing,sort=nearest,distance=..3,limit=1] ~ ~ ~ ~ ~
+execute as @a[nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}}] at @s positioned ^ ^ ^0.2 run execute positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[tag=dragonfacing,sort=nearest,distance=..3,limit=1] ~ ~ ~ ~ ~
+execute as @a[nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}},nbt={SelectedItem:{tag:{DragonBook:1}}}] at @s positioned ^ ^ ^1.0 run execute positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[tag=dragonfacing,sort=nearest,distance=..3,limit=1] ~ ~ ~ ~ ~
 
 execute as @e[tag=dragonfacing] at @s run tp @e[tag=dragonseat,limit=1,sort=nearest,distance=..3] ~ ~ ~ ~ ~
 
 
-execute as @e[tag=dragonseat] at @s if entity @p[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}}] rotated ~ 0 positioned ^ ^ ^-2.6 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
-execute as @e[tag=dragonseat] at @s if entity @p[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}},SelectedItem:{tag:{DragonBook:1}}}] positioned ^ ^ ^-2.7 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
+execute as @e[tag=dragonseat] at @s if entity @a[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}}] rotated ~ 0 positioned ^ ^ ^-2.6 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
+execute as @e[tag=dragonseat] at @s if entity @a[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}},SelectedItem:{tag:{DragonBook:1}}}] positioned ^ ^ ^-2.7 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
 
-#execute as @e[tag=dragonseat] at @s if entity @p[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}},SelectedItem:{tag:{DragonBook:1}}}] positioned ^ ^ ^-0.6 run execute rotated ~ 0 positioned ^ ^ ^-2.0 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
+#execute as @e[tag=dragonseat] at @s if entity @a[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}},SelectedItem:{tag:{DragonBook:1}}}] positioned ^ ^ ^-0.6 run execute rotated ~ 0 positioned ^ ^ ^-2.0 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
 
-execute as @e[tag=dragonseat] at @s unless entity @p[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}}] rotated ~ 0 positioned ^ ^ ^-3.5 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-1.0 ~ ~-180 ~
+execute as @e[tag=dragonseat] at @s unless entity @a[distance=..3,nbt={RootVehicle:{Entity:{Tags:["dragonseat"]}}}] rotated ~ 0 positioned ^ ^ ^-3.5 run execute rotated as @s run tp @e[tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-1.0 ~ ~-180 ~
 
 
 execute as @e[tag=dragonvisible] at @s unless entity @e[tag=dragonseat,distance=..4,limit=1] run kill @s

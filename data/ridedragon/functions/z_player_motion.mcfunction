@@ -11,7 +11,11 @@ execute as @e[type=armor_stand,distance=..6,tag=dragonfacing_selected,limit=1] a
 
 
 # Move the dragon to the correct offset relative to the player/dragonseat depending on the low/high speed
+# Low speed
 execute as @e[type=horse,distance=..6,tag=dragonseat_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.6 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
+# High speed looking up or forward
 execute if entity @s[nbt={SelectedItem:{tag:{DragonBook:1}}}] as @e[type=horse,distance=..6,tag=dragonseat_selected,limit=1] at @s positioned ^ ^ ^-2.7 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
+# High speed looking down
+execute if entity @s[x_rotation=10..90,nbt={SelectedItem:{tag:{DragonBook:1}}}] as @e[type=horse,distance=..6,tag=dragonseat_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.7 rotated as @s positioned ^ ^ ^-2.2 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible,limit=1,sort=nearest,distance=..4] ~ ~-0.7 ~ ~-180 ~
 
 

@@ -1,4 +1,14 @@
-execute if entity @s[nbt={Inventory:[{tag:{DragonBook:1}}]}] run function ridedragon:summon_dragon
+# Need to clear the rd_help scoreboard first as no-match in an execute statement is 
+# not considered a failure (see https://bugs.mojang.com/browse/MC-125058)
+scoreboard players set #rd_success rd_help 0
+
+# Test for the conditions allowing summoning: 
+#  - creative player, 
+#  - non-creative player summoning and allowing bare triggers
+#  - non-creative player holding the Book of Dragons
+execute store success score #rd_success rd_help if entity @s[nbt={playerGameType:1}] run function ridedragon:summon_dragon
+execute store success score #rd_success rd_help unless score #rd_success rd_help matches 1 if data storage ridedragon:settings rd_admin{can_summon:"Enabled"} if data storage ridedragon:settings rd_admin{summon_without_book:"Enabled"} run function ridedragon:summon_dragon
+execute unless score #rd_success rd_help matches 1 if data storage ridedragon:settings rd_admin{can_summon:"Enabled"} if entity @s[nbt={Inventory:[{tag:{DragonBook:1}}]}] run function ridedragon:summon_dragon
 
 #
 # Reset player's trigger score and re-enable

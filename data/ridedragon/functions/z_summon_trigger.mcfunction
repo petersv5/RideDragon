@@ -6,9 +6,11 @@ scoreboard players set #rd_success rd_help 0
 #  - creative player, 
 #  - non-creative player summoning and allowing bare triggers
 #  - non-creative player holding the Book of Dragons
-execute store success score #rd_success rd_help if entity @s[nbt={playerGameType:1}] run function ridedragon:summon_dragon
+execute store success score #rd_success rd_help if entity @s[gamemode=creative] run function ridedragon:summon_dragon
 execute store success score #rd_success rd_help unless score #rd_success rd_help matches 1 if data storage ridedragon:settings rd_admin{can_summon:"Enabled"} if data storage ridedragon:settings rd_admin{summon_without_book:"Enabled"} run function ridedragon:summon_dragon
 execute unless score #rd_success rd_help matches 1 if data storage ridedragon:settings rd_admin{can_summon:"Enabled"} if entity @s[nbt={Inventory:[{tag:{DragonBook:1}}]}] run function ridedragon:summon_dragon
+
+execute unless entity @s[gamemode=creative] unless data storage ridedragon:settings rd_admin{can_summon:"Enabled"} run tellraw @s [{"text":"Dragon","color":"light_purple"},{"text":" summoning is globally disabled","color":"aqua"}]
 
 #
 # Reset player's trigger score and re-enable

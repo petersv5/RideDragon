@@ -8,6 +8,8 @@
 scoreboard objectives add rd_help trigger
 scoreboard objectives add rd_summon trigger
 scoreboard objectives add rd_vanish trigger
+scoreboard objectives add rd_silence trigger
+scoreboard objectives add rd_id dummy
 
 #
 # Resets triggers on reload
@@ -15,6 +17,7 @@ scoreboard objectives add rd_vanish trigger
 scoreboard players enable * rd_help
 scoreboard players enable * rd_summon
 scoreboard players enable * rd_vanish
+scoreboard players enable * rd_silence
 #
 
 #

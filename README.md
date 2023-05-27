@@ -15,6 +15,9 @@ Players can use "/trigger rd_help" for mor information.
 OPs can configure if the Book Of dragons is required to summon a dragon as well as how the book 
 can be obtained via the admin interface which is opened with the command "/function ridedragon:admin".
 
+It is recommended to use the "Anti Ender Dragon Grief" data pack
+(https://www.planetminecraft.com/member/dragon3025/) by Dragon3025 to prevent the dragons from
+erasing parts of the world as they are flown around.
 
 This datapack was inspired by the video https://www.youtube.com/watch?v=vBUknTYjylc&t=284s by John 
 Paul Inso. That design was not safe for multiple simultaneous players.

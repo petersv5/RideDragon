@@ -22,3 +22,5 @@ execute if entity @s[x_rotation=10..90,predicate=ridedragon:book_holder_mainhand
 execute if entity @s[x_rotation=10..90,predicate=ridedragon:book_holder_offhand] as @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.7 rotated as @s positioned ^ ^ ^-2.2 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
 
 
+# Check if dragon fireballs are enabled the trigger held and looking sufficiently below the horizon (10 degrees or more)
+execute if data storage ridedragon:settings rd_admin{can_fire:"Enabled"} run execute if entity @s[x_rotation=10..90,predicate=ridedragon:is_holding_trigger_item] at @s run execute if entity @e[tag=dragonvisible_selected,limit=1,scores={rd_fire_cooldown=0}] run function ridedragon:z_launch_fireball

@@ -1,5 +1,11 @@
 # called as dragon_visible, at same
 
+# Fireball cooldown handling
+scoreboard players remove @s[scores={rd_fire_cooldown=1..}] rd_fire_cooldown 1
+
+# Find all the parts of the flying stack and tag them as
+# dragonvisible_selected, dragonhelper_selected, dragonseat_selected, dragonrider_selected
+
 scoreboard players operation #rd_selected_id rd_id = @s rd_id
 tag @s add dragonvisible_selected
 execute as @e[type=marker,tag=dragonhelper,distance=..7] if score @s rd_id = #rd_selected_id rd_id run tag @s add dragonhelper_selected

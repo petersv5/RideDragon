@@ -13,4 +13,5 @@ tag @e[type=minecraft:marker,tag=dragon_temp,distance=..2,limit=1] remove dragon
 # Set HurtTime to -1 to keep the knockback effect of the dragon disabled.
 summon minecraft:ender_dragon ~ ~0.15 ~ {Tags:["dragonvisible","dragon_temp"],Health:5,HurtTime:-1}
 scoreboard players operation @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] rd_id = #rd_global_cnt rd_id
+scoreboard players set @e[tag=dragon_temp,limit=1] rd_fire_cooldown 0
 tag @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] remove dragon_temp

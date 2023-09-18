@@ -3,5 +3,6 @@ rev 0.2
 
 - Clean up the temporary tags from the dragon and the armor stand
 - Add player launched dragon fireballs
+- Initial health of the dragon can be configured via the admin menu (/function ridedragon:admin)
 
 

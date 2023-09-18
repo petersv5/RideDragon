@@ -15,10 +15,18 @@ Players can use "/trigger rd_help" for mor information.
 OPs can configure if the Book Of dragons is required to summon a dragon as well as how the book 
 can be obtained via the admin interface which is opened with the command "/function ridedragon:admin".
 
+OPs can also control if the players are able to trigger dragon fireballs while mounted by holding
+an end crystal. Fireballs are limited to one per 10 seconds per dragon and can only be fired in a 
+downwards direction.
+
 It is recommended to use the "Anti Ender Dragon Grief" data pack
 (https://www.planetminecraft.com/member/dragon3025/) by Dragon3025 to prevent the dragons from
 erasing parts of the world as they are flown around.
 
 This datapack was inspired by the video https://www.youtube.com/watch?v=vBUknTYjylc&t=284s by John 
-Paul Inso. That design was not safe for multiple simultaneous players.
+Paul Inso. That design was not safe for multiple simultaneous players which inspired me to make my 
+own version.
+
+For further support or questions please use the Discord at: https://discord.gg/6eJxzG5jkA or
+visit the github repository: https://github.com/petersv5/RideDragon
 

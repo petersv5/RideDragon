@@ -22,7 +22,7 @@ the admin interface.
 - if the players are able to trigger dragon fireballs
 - initial health of summoned dragons. 
 
------ important -----
+----- Important -----
 It is recommended to use the "Anti Ender Dragon Grief" data pack
 (https://www.planetminecraft.com/member/dragon3025/) by Dragon3025 to prevent the dragons from
 erasing parts of the world as they are flown around.
@@ -37,3 +37,4 @@ The admin interface was inspired by the Armor Statues datapack.
 For further support or questions please use the Discord at: https://discord.gg/6eJxzG5jkA or
 visit the github repository: https://github.com/petersv5/RideDragon
 
+New releases are posted on Modrinth: https://modrinth.com/datapack/ride-dragon

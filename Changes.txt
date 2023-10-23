@@ -1,3 +1,9 @@
+rev 1.2
+-------
+
+- Support for 1.20.2 and resource pack version 17
+- Unfortunately the commands for setting invisibility changed, breaking backwards compatibiltiy.
+
 rev 1.1
 -------
 

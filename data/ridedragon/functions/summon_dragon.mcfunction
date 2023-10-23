@@ -1,7 +1,7 @@
 # Step the global counter. It is used as a pseudo-uuid that can be stored in the entity data.
 scoreboard players add #rd_global_cnt rd_id 1
 
-summon minecraft:horse ~ ~1 ~ {NoAI:1b,Invulnerable:1b,Tags:["dragonseat","dragon_temp"],DeathLootTable:"minecraft:empty",Attributes:[{Name:"generic.knockback_resistance",Base:10000f}],ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:0b}],Silent:1b}
+summon minecraft:horse ~ ~1 ~ {NoAI:1b,Invulnerable:1b,Tags:["dragonseat","dragon_temp"],DeathLootTable:"minecraft:empty",Attributes:[{Name:"generic.knockback_resistance",Base:10000f}],active_effects:[{id:invisibility,amplifier:0,duration:2147483647,show_particles:0b}],Silent:1b}
 scoreboard players operation @e[type=minecraft:horse,tag=dragon_temp,distance=..2,limit=1] rd_id = #rd_global_cnt rd_id
 tag @e[type=minecraft:horse,tag=dragon_temp,distance=..2,limit=1] remove dragon_temp
 

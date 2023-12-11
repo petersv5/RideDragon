@@ -1,3 +1,8 @@
+rev 1.1.1
+---------
+- Scoreboard objective needs to be enabled also for new players
+
+
 rev 1.1
 -------
 

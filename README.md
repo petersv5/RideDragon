@@ -24,7 +24,7 @@ the admin interface.
 
 ----- Important -----
 It is recommended to use the "Anti Ender Dragon Grief" data pack
-(https://www.planetminecraft.com/member/dragon3025/) by Dragon3025 to prevent the dragons from
+(https://modrinth.com/datapack/anti-ender-dragon-grief) by Dragon3025 to prevent the dragons from
 erasing parts of the world as they are flown around.
 ---------------------
 

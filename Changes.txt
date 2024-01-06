@@ -1,3 +1,9 @@
+rev 1.4
+---------
+
+- 1.20.4 compatibility: correct boolean representation in JSON texts
+- 1.20.4 compatibility: replace old "reset" color with "black"
+
 rev 1.3
 ---------
 

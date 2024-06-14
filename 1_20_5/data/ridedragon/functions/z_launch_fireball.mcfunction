@@ -1,5 +1,5 @@
 # Summon a new dragon fireball
-#summon minecraft:dragon_fireball ~ ~4 ~ {Tags:["dragon_fireball_selected","dragon_fireball"],direction:[0.5,0.0,0.0],power:[0.1,-0.1,0.0],Owner:[I;1,1,1,1]}
+#summon minecraft:dragon_fireball ~ ~4 ~ {Tags:["dragon_fireball_selected","dragon_fireball"],direction:[0.5,0.0,0.0],acceleration_power:[0.1,-0.1,0.0],Owner:[I;1,1,1,1]}
 summon minecraft:dragon_fireball ^ ^ ^8 {Tags:["dragon_fireball_selected","dragon_fireball"]}
 
 # Mark the dragon as the owner so that the dragon's breath can be collected from the

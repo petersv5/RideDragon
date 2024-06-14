@@ -1,3 +1,11 @@
+rev 1.5
+---------
+
+- 1.20.5 - 1.21 compatibility: new datapack format
+- all versions: fixed bug where multiple dragons spawned simultaneously for creative users when
+                the admin menu allowed non-book spawning
+- all versions: the fireball cooldown is now configurable in the admin menu
+
 rev 1.4
 ---------
 

@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "offhand": {
+        "items": "minecraft:written_book",
+        "count": {
+          "min": 1
+        },
+        "predicates": {
+          "minecraft:custom_data": {"DragonBook":"1"}
+        }
+      }
+    }
+  }
+}
+

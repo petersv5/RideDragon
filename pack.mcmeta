@@ -13,20 +13,27 @@
                                 "directory": "1_20_3",
                                 "formats": {
                                         "min_inclusive": 19,
-                                        "max_inclusive": 9999999
+                                        "max_inclusive": 40
                                 }
                         },
                         {
                                 "directory": "1_20_5",
                                 "formats": {
                                         "min_inclusive": 41,
-                                        "max_inclusive": 9999999
+                                        "max_inclusive": 47
                                 }
                         },
 			{
 				"directory": "1_21_0",
 				"formats": {
 					"min_inclusive": 48,
+					"max_inclusive": 48
+				}
+			},
+			{
+				"directory": "1_21_4",
+				"formats": {
+					"min_inclusive": 61,
 					"max_inclusive": 9999999
 				}
 			}

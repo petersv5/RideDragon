@@ -12,6 +12,8 @@ scoreboard objectives add rd_silence trigger
 scoreboard objectives add rd_id dummy
 # Cooldown timer per dragon, not player
 scoreboard objectives add rd_fire_cooldown dummy
+# Tick phase per dragon, not player
+scoreboard objectives add rd_tick_phase dummy
 
 #
 # Resets triggers on reload

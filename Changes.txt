@@ -1,3 +1,9 @@
+rev 1.7
+---------
+
+- all versions: worked around a bug affecting long latency clients, rendering
+                their controls extremely sluggish and jerky
+
 rev 1.6
 ---------
 

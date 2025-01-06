@@ -1,11 +1,13 @@
 # Executed as dragonrider, no position
+# Project two movement steps forward now that it is actually time to move
+# the horse and player.
 
 # Low speed default
-execute as @s at @s positioned ^ ^ ^0.2 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
+execute as @s at @s positioned ^ ^ ^0.4 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
 
 # High speed when holding the book
-execute if entity @s[predicate=ridedragon:book_holder_mainhand] at @s positioned ^ ^ ^1.0 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
-execute if entity @s[predicate=ridedragon:book_holder_offhand] at @s positioned ^ ^ ^1.0 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
+execute if entity @s[predicate=ridedragon:book_holder_mainhand] at @s positioned ^ ^ ^2.0 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
+execute if entity @s[predicate=ridedragon:book_holder_offhand] at @s positioned ^ ^ ^2.0 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
 
 #Move the dragonseat (horse) to the helper marker
 execute as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s run tp @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] ~ ~ ~ ~ ~

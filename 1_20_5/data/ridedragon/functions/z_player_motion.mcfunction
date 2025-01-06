@@ -13,13 +13,13 @@ execute as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s 
 
 # Move the dragon to the correct offset relative to the player/dragonseat depending on the low/high speed
 # Low speed
-execute as @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.6 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
+execute as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.6 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
 # High speed looking up or forward
-execute if entity @s[predicate=ridedragon:book_holder_mainhand] as @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] at @s positioned ^ ^ ^-2.7 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
-execute if entity @s[predicate=ridedragon:book_holder_offhand] as @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] at @s positioned ^ ^ ^-2.7 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
+execute if entity @s[predicate=ridedragon:book_holder_mainhand] as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s positioned ^ ^ ^-2.7 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
+execute if entity @s[predicate=ridedragon:book_holder_offhand] as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s positioned ^ ^ ^-2.7 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
 # High speed looking down
-execute if entity @s[x_rotation=10..90,predicate=ridedragon:book_holder_mainhand] as @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.7 rotated as @s positioned ^ ^ ^-2.2 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
-execute if entity @s[x_rotation=10..90,predicate=ridedragon:book_holder_offhand] as @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.7 rotated as @s positioned ^ ^ ^-2.2 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
+execute if entity @s[x_rotation=10..90,predicate=ridedragon:book_holder_mainhand] as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.7 rotated as @s positioned ^ ^ ^-2.2 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
+execute if entity @s[x_rotation=10..90,predicate=ridedragon:book_holder_offhand] as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s rotated ~ 0 positioned ^ ^ ^-2.7 rotated as @s positioned ^ ^ ^-2.2 rotated as @s run tp @e[type=ender_dragon,tag=dragonvisible_selected,limit=1,sort=nearest,distance=..7] ~ ~-0.7 ~ ~-180 ~
 
 
 # Check if dragon fireballs are enabled the trigger held and looking sufficiently below the horizon (10 degrees or more)

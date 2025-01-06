@@ -1,4 +1,6 @@
 # Executed as dragonrider, no position
+# Do not actually move the horse, but project the path forward for the marker and dragon one extra tick 
+# (2x what is in z_player_motion)
 
 # Low speed default
 execute as @s at @s positioned ^ ^ ^0.2 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
@@ -8,7 +10,7 @@ execute if entity @s[predicate=ridedragon:book_holder_mainhand] at @s positioned
 execute if entity @s[predicate=ridedragon:book_holder_offhand] at @s positioned ^ ^ ^1.0 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
 
 #Move the dragonseat (horse) to the helper marker
-execute as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s run tp @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] ~ ~ ~ ~ ~
+#execute as @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] at @s run tp @e[type=horse,distance=..7,tag=dragonseat_selected,limit=1] ~ ~ ~ ~ ~
 
 
 # Move the dragon to the correct offset relative to the player/dragonseat depending on the low/high speed

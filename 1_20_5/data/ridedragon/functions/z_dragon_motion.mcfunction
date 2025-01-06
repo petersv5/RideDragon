@@ -16,7 +16,23 @@ tag @a[nbt={RootVehicle:{Entity:{Tags:["dragonseat_selected"]}}},distance=..7,li
 # by actual harming of the dragon, so set it back to -1.
 data modify entity @s HurtTime set value -1
 
-execute as @a[tag=dragonrider_selected,distance=..7,limit=1] run function ridedragon:z_player_motion
+# If there is a rider
+# Only update the horse and thus player position every other tick to give time for the player 
+# rotation to be updated from client to the server. Update corresponding to two ticks worth
+# of movement instead.
+# Background: Teleporting the horse seems to inhibit player rotation update from the client 
+# for the remaining duration of that tick. On high-latency connections this casued severe issues. 
+execute if score @s rd_tick_phase matches 0 as @a[tag=dragonrider_selected,distance=..7,limit=1] run function ridedragon:z_player_motion_update_tick
+# The other ticks we move the assembly forward one step.
+execute if score @s rd_tick_phase matches 1 as @a[tag=dragonrider_selected,distance=..7,limit=1] run function ridedragon:z_player_motion_non_update_tick
+
+scoreboard players add @s rd_tick_phase 1
+execute if score @s rd_tick_phase matches 2.. run scoreboard players set @s rd_tick_phase 0
+
+# Single tick variation of player momvment. Not used currently.
+#execute as @a[tag=dragonrider_selected,distance=..7,limit=1] run function ridedragon:z_player_motion
+
+# If no rider perform default movement
 execute as @e[type=marker,tag=dragonhelper_selected,distance=..7,limit=1] unless entity @a[distance=..7,limit=1,tag=dragonrider_selected] run function ridedragon:z_no_player_motion
 
 tag @s remove dragonvisible_selected

@@ -15,6 +15,7 @@ summon minecraft:ender_dragon ~ ~0.15 ~ {Tags:["dragonvisible","dragon_temp"],He
 data modify entity @e[tag=dragon_temp,limit=1] Health set from storage ridedragon:settings rd_admin.dragon_health
 scoreboard players operation @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] rd_id = #rd_global_cnt rd_id
 scoreboard players set @e[tag=dragon_temp,limit=1] rd_fire_cooldown 0
+execute if data storage ridedragon:settings rd_admin{summon_silent:"Silent"} run data modify entity @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] Silent set value 1b
 tag @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] remove dragon_temp
 
 return 1

@@ -2,6 +2,7 @@ rev 1.8
 ---------
 
 - all versions: added admin menu setting to spawn dragons silent by default
+- all versions: added admin menu setting to spawn dragons invulnerable to survival players
 
 rev 1.7
 ---------

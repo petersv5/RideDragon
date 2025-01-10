@@ -21,6 +21,9 @@ the admin interface.
 - how the book can be obtained via the admin
 - if the players are able to trigger dragon fireballs
 - initial health of summoned dragons. 
+- initial state of silence for the dragons
+- if dragons should be invulnerable to survival player attacks (they can still be vanished using the book)
+
 
 ----- Important -----
 It is recommended to use the "Anti Ender Dragon Grief" data pack

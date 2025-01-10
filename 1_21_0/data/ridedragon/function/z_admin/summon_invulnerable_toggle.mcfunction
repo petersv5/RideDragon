@@ -1,5 +1,5 @@
 #
-# Description:	Enable/disable dragon voice on summoning
+# Description:	Enable/disable dragon invulnerability on summoning
 # Called by:	ridedragon:admin via chat link
 # Entity @s:	player
 #

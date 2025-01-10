@@ -32,6 +32,7 @@ execute unless data storage ridedragon:settings rd_admin.book_help run data modi
 execute unless data storage ridedragon:settings rd_admin.can_summon run data modify storage ridedragon:settings rd_admin.can_summon set value "Disabled"
 execute unless data storage ridedragon:settings rd_admin.summon_without_book run data modify storage ridedragon:settings rd_admin.summon_without_book set value "Disabled"
 execute unless data storage ridedragon:settings rd_admin.can_fire run data modify storage ridedragon:settings rd_admin.can_fire set value "Disabled"
+execute unless data storage ridedragon:settings rd_admin.summon_silent run data modify storage ridedragon:settings rd_admin.summon_silent set value "Roaring"
 execute unless data storage ridedragon:settings rd_admin.dragon_health run data modify storage ridedragon:settings rd_admin.dragon_health set value 5
 execute unless data storage ridedragon:settings rd_admin.fire_cooldown run data modify storage ridedragon:settings rd_admin.fire_cooldown set value 200
 

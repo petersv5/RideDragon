@@ -1,3 +1,8 @@
+rev 1.8
+---------
+
+- all versions: added admin menu setting to spawn dragons silent by default
+
 rev 1.7
 ---------
 

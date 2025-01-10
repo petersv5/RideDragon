@@ -3,6 +3,7 @@ rev 1.8
 
 - all versions: added admin menu setting to spawn dragons silent by default
 - all versions: added admin menu setting to spawn dragons invulnerable to survival players
+- all versions: added admin menu setting to restrict vanishing to non-mounted dragons
 
 rev 1.7
 ---------

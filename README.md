@@ -23,6 +23,7 @@ the admin interface.
 - initial health of summoned dragons. 
 - initial state of silence for the dragons
 - if dragons should be invulnerable to survival player attacks (they can still be vanished using the book)
+- if dragons that are mounted can be vanished
 
 
 ----- Important -----

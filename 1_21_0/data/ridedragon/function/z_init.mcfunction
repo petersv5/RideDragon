@@ -31,6 +31,7 @@ scoreboard players enable * rd_silence
 execute unless data storage ridedragon:settings rd_admin.book_help run data modify storage ridedragon:settings rd_admin.book_help set value "Disabled"
 execute unless data storage ridedragon:settings rd_admin.can_summon run data modify storage ridedragon:settings rd_admin.can_summon set value "Disabled"
 execute unless data storage ridedragon:settings rd_admin.summon_without_book run data modify storage ridedragon:settings rd_admin.summon_without_book set value "Disabled"
+execute unless data storage ridedragon:settings rd_admin.single_use_book run data modify storage ridedragon:settings rd_admin.single_use_book set value "Unlimited uses"
 execute unless data storage ridedragon:settings rd_admin.can_fire run data modify storage ridedragon:settings rd_admin.can_fire set value "Disabled"
 execute unless data storage ridedragon:settings rd_admin.summon_silent run data modify storage ridedragon:settings rd_admin.summon_silent set value "Roaring"
 execute unless data storage ridedragon:settings rd_admin.dragon_health run data modify storage ridedragon:settings rd_admin.dragon_health set value 5

@@ -1,6 +1,7 @@
 rev 1.10
 --------
 - all versions: add admin option to make the dragonseat glow for 10s after summoning
+- all versions: the Book of Dragons can be configured to be single use only
 
 
 rev 1.9

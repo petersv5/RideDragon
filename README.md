@@ -22,6 +22,7 @@ the admin interface.
 - if the players are able to trigger dragon fireballs
 - initial health of summoned dragons. 
 - initial state of silence for the dragons
+- if the mount point should glow for a short period of time after summoning
 - if dragons should be invulnerable to survival player attacks (they can still be vanished using the book)
 - if dragons that are mounted can be vanished
 

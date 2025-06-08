@@ -1,3 +1,8 @@
+rev 1.10
+--------
+- all versions: add admin option to make the dragonseat glow for 10s after summoning
+
+
 rev 1.9
 ---------
 

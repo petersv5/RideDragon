@@ -3,6 +3,7 @@ scoreboard players add #rd_global_cnt rd_id 1
 
 summon minecraft:horse ~ ~1 ~ {NoAI:1b,Invulnerable:1b,Tags:["dragonseat","dragon_temp"],DeathLootTable:"minecraft:empty",Attributes:[{Name:"generic.knockback_resistance",Base:10000f}],active_effects:[{id:invisibility,amplifier:0,duration:2147483647,show_particles:0b}],Silent:1b}
 scoreboard players operation @e[type=minecraft:horse,tag=dragon_temp,distance=..2,limit=1] rd_id = #rd_global_cnt rd_id
+execute if data storage ridedragon:settings rd_admin{summon_glowing:"Glowing"} run effect give @e[type=minecraft:horse,tag=dragon_temp,distance=..4,limit=1] glowing 10 0 true
 tag @e[type=minecraft:horse,tag=dragon_temp,distance=..2,limit=1] remove dragon_temp
 
 #summon minecraft:armor_stand ~ ~1 ~ {Tags:["dragonhelper","dragon_temp"],NoGravity:1b,Invisible:0b,Invulnerable:1b,Attributes:[{Name:"generic.knockback_resistance",Base:10000f}],CustomName:'["",{"text":"Ender Dragon","color":"dark_purple"}]',ShowParticles:0b}

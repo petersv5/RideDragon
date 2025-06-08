@@ -36,6 +36,7 @@ execute unless data storage ridedragon:settings rd_admin.summon_silent run data 
 execute unless data storage ridedragon:settings rd_admin.dragon_health run data modify storage ridedragon:settings rd_admin.dragon_health set value 5
 execute unless data storage ridedragon:settings rd_admin.fire_cooldown run data modify storage ridedragon:settings rd_admin.fire_cooldown set value 200
 execute unless data storage ridedragon:settings rd_admin.summon_invulnerable run data modify storage ridedragon:settings rd_admin.summon_invulnerable set value "Mortal"
+execute unless data storage ridedragon:settings rd_admin.summon_glowing run data modify storage ridedragon:settings rd_admin.summon_glowing set value "Invisible"
 execute unless data storage ridedragon:settings rd_admin.vanish_ridden run data modify storage ridedragon:settings rd_admin.vanish_ridden set value "Vanishable"
 
 # Schedule function to remove orphaned dragon components every 1 seconds (use a prime number of ticks)

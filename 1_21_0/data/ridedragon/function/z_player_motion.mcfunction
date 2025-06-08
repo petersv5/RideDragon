@@ -1,5 +1,8 @@
 # Executed as dragonrider, no position
 
+# Remove the glowing effect on the dragonseat, if active
+effect clear @e[type=minecraft:horse,distance=..7,tag=dragonseat_selected,limit=1] glowing
+
 # Low speed default
 execute as @s at @s positioned ^ ^ ^0.2 positioned ~ ~-0.85 ~ if block ~ ~-1.3 ~ air run tp @e[type=marker,distance=..7,tag=dragonhelper_selected,limit=1] ~ ~ ~ ~ ~
 

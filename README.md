@@ -19,6 +19,7 @@ The datapack can be configured by an OP via the "/function ridedragon:admin" com
 the admin interface.
 - if the Book Of dragons is required to summon a dragon
 - how the book can be obtained via the admin
+- if the book self-destructs after a single use
 - if the players are able to trigger dragon fireballs
 - initial health of summoned dragons. 
 - initial state of silence for the dragons

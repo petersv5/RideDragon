@@ -20,4 +20,7 @@ execute if data storage ridedragon:settings rd_admin{summon_silent:"Silent"} run
 execute if data storage ridedragon:settings rd_admin{summon_invulnerable:"Invulnerable"} run data modify entity @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] Invulnerable set value 1b
 tag @e[type=minecraft:ender_dragon,tag=dragon_temp,distance=..2,limit=1] remove dragon_temp
 
+# Consume one book if it was single use
+execute if data storage ridedragon:settings rd_admin{single_use_book:"Single use"} run clear @a minecraft:written_book[minecraft:custom_data~{"DragonBook":"1"}] 1
+
 return 1

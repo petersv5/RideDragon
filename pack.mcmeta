@@ -34,15 +34,24 @@
 				"directory": "1_21_4",
 				"formats": {
 					"min_inclusive": 61,
-					"max_inclusive": 9999999
+					"max_inclusive": 81
 				}
 			},
 			{
 				"directory": "1_21_5",
 				"formats": {
 					"min_inclusive": 71,
-					"max_inclusive": 9999999
+					"max_inclusive": 81
 				}
+			},
+			{
+				"directory": "1_21_9",
+				"formats": {
+					"min_inclusive": 88,
+					"max_inclusive": 88
+				},
+				"min_format": [88],
+                                "max_format": [88]
 			}
 		]
 	}

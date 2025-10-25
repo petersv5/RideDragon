@@ -1,3 +1,7 @@
+rev 1.11
+--------
+1.21.9 / 1.21.10 compatibility: new datapack format
+
 rev 1.10
 --------
 - all versions: add admin option to make the dragonseat glow for 10s after summoning

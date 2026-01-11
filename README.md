@@ -28,6 +28,10 @@ the admin interface.
 - if dragons that are mounted can be vanished
 
 
+A disabled crafting recipe for the Book of Dragons is included for 1.21.9. It can be reenabled by renaming 
+the directory "recipe_disabled" to "recipe" in the directory 1_21_9/data/ridedragon/ inside the datapack.
+This is a preview. In the future it may move into the run time admin configuration menu of the datapack.
+
 ----- Important -----
 It is recommended to use the "Anti Ender Dragon Grief" data pack
 (https://modrinth.com/datapack/anti-ender-dragon-grief) by Dragon3025 to prevent the dragons from

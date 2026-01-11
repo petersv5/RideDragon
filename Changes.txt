@@ -1,3 +1,7 @@
+rev 1.13
+--------
+1.21.9-1.21.11: Preview of crafting recipe for the Book of Dragons. See README.md.
+
 rev 1.12
 --------
 1.21.11 compatibility: new datapack format

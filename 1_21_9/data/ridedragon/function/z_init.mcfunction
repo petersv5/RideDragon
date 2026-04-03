@@ -14,6 +14,8 @@ scoreboard objectives add rd_id dummy
 scoreboard objectives add rd_fire_cooldown dummy
 # Tick phase per dragon, not player
 scoreboard objectives add rd_tick_phase dummy
+# Extra math helper (operands)
+scoreboard objectives add rd_math_extra1 dummy
 
 #
 # Resets triggers on reload
@@ -39,6 +41,8 @@ execute unless data storage ridedragon:settings rd_admin.fire_cooldown run data 
 execute unless data storage ridedragon:settings rd_admin.summon_invulnerable run data modify storage ridedragon:settings rd_admin.summon_invulnerable set value "Mortal"
 execute unless data storage ridedragon:settings rd_admin.summon_glowing run data modify storage ridedragon:settings rd_admin.summon_glowing set value "Invisible"
 execute unless data storage ridedragon:settings rd_admin.vanish_ridden run data modify storage ridedragon:settings rd_admin.vanish_ridden set value "Vanishable"
+execute unless data storage ridedragon:settings ride_height run data modify storage ridedragon:settings ride_height set value -0.7
+execute unless data storage ridedragon:settings rd_admin.ride_height_display run data modify storage ridedragon:settings rd_admin.ride_height_display set value 0.7
 
 # Schedule function to remove orphaned dragon components every 1 seconds (use a prime number of ticks)
 schedule function ridedragon:z_dragon_cleanup 23t

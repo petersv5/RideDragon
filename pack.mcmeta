@@ -61,6 +61,15 @@
 				},
 				"min_format": 107,
                                 "max_format": 107
+			},
+			{
+				"directory": "26_3",
+				"formats": {
+					"min_inclusive": 121,
+					"max_inclusive": 121
+				},
+				"min_format": 121,
+                                "max_format": 121
 			}
 		]
 	}
